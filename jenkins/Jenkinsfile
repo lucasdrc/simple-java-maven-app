@@ -7,11 +7,15 @@ pipeline {
     }
     stages {
         stage('SCM') {
-            checkout scm
+            steps {
+                checkout scm
+            }
         }
         stage('SonarQube Analysis') {
-            withSonarQubeEnv() {
-                sh 'mvn sonar:sonar'
+            steps {
+                withSonarQubeEnv() {
+                    sh 'mvn sonar:sonar'
+                }
             }
         }
         stage('Build') {
