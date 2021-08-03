@@ -33,11 +33,7 @@ public class AppTest
     public void testAppMain()
     {
         App.main(null);
-        try {
-            assertEquals("Hello World 2.0!" + System.getProperty("line.separator"), outContent.toString());
-        } catch (AssertionError e) {
-            fail("\"message\" is not \"Hello World 2.0!\"");
-        }
+        assertEquals("Hello World 2.0!" + System.getProperty("line.separator"), outContent.toString());
     }
 
     @After
