@@ -19,8 +19,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.projectKey>testando</sonar.projectKey>
     <sonar.host.url>http://192.168.0.122:9000</sonar.host.url>
-    <sonar.login>admin</sonar.login>
-    <sonar.password>451226062922</sonar.password>
   </properties>
   <build>
     <pluginManagement>
